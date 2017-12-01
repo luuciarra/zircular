@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 	<html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+
+		<!-- preloader section -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-circle">
+		       <div class="sk-circle1 sk-circle"></div>
+		       <div class="sk-circle2 sk-circle"></div>
+		       <div class="sk-circle3 sk-circle"></div>
+		       <div class="sk-circle4 sk-circle"></div>
+		       <div class="sk-circle5 sk-circle"></div>
+		       <div class="sk-circle6 sk-circle"></div>
+		       <div class="sk-circle7 sk-circle"></div>
+		       <div class="sk-circle8 sk-circle"></div>
+		       <div class="sk-circle9 sk-circle"></div>
+		       <div class="sk-circle10 sk-circle"></div>
+		       <div class="sk-circle11 sk-circle"></div>
+		       <div class="sk-circle12 sk-circle"></div>
+		    </div>
+		</div>
 
 		<div class="container-fluid" style="padding: 0">
 			<?php include("menuInclude.php") ?>
@@ -141,19 +161,7 @@
 	</body>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/ready.js"></script>
 	<script src="js/projects.js"></script>
 	<script src="js/menu.js"></script>	
-
-	<script>
-		$(".logo-menu-container-button").click(function(){
-			$(".main-menu").css("z-index","150");
-			$(".main-menu").css("opacity","1");
-			$(".logo-menu-container-button").css("cursor","auto");
-			if ($('.main-menu').css('opacity') == '0') {
-				$(".menu-port-solid").addClass("animated"); 
-				$(".solid-animation").addClass("animated");	
-				$(".menu-text-transition").css("opacity","1");
-			}
-		})
-	</script>
 </html>

@@ -1,9 +1,12 @@
 /*ON CLICK de portfolio*/
 $(".item").click(function(){
 	var obj = $(this);
-	var classes = obj.attr("class").split(" ");
-	var attr = classes[classes.length-1];
-	attr = attr.substr(0,attr.length-3);
+
+	// var classes = obj.attr("class").split(" ");
+	// var attr = classes[classes.length-1];
+	// attr = attr.substr(0,attr.length-3);
+	var attr = obj.css("background-color");
+
 
 	var main = $('.port-main-title', $( this ) ).html ();
 	var subtitle = $('.port-main-subtitle', $( this ) ).html ();
@@ -13,8 +16,8 @@ $(".item").click(function(){
 
 	$(".port-title").toggleClass("desappear");
 	$(".work-single").css("display","block");
-	$(".work-common-title").addClass(attr);
-	$(".work-info-4").addClass(attr+"-back");
+	$(".work-common-title").css("color",attr);
+	$(".work-info-4").css("background-color", attr);
 
 	setTimeout(function(){
 		$(".work-title").toggleClass("toleft");

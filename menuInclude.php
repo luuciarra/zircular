@@ -1,6 +1,25 @@
 	<div class="logo-menu-container">
 		<div class="logo-menu-container-button">LOGO</div>
 	</div>
+
+	<div class="main-menu-responsive container-fluid" >
+		<div class="menu-close">
+			<button class="close-button">
+				<span class="uno"></span>
+				<span class="dos"></span>
+			</button>
+		</div>
+		<div class="menu-container ">
+			<ul class="menu-resp-list">
+				<li><a href="">Proyectos.</a></li>
+				<li><a href="">Servicios.</a></li>
+				<li><a href="">Acerca de.</a></li>
+				<li><a href="">Reconocimiento.</a></li>
+				<li><a href="">Contacto.</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div class="main-menu container-fluid" >
 		<div class="menu-close">
 			<button class="close-button">
@@ -8,13 +27,12 @@
 				<span class="dos"></span>
 			</button>
 		</div>
-
-		<div class="menu-container">
+		<div class="menu-container ">
 			<div class="row">
 				<div class="col menu-port-solid port-info align-self-center">
 					<div class="solid-animation"></div>
 					<div class="row align-items-end ">
-						<h6 class="menu-text-transition">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<h6 class="menu-text-transition menu-data-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						</h6>
 					</div>
 				</div>
