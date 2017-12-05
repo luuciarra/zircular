@@ -321,17 +321,25 @@ preloader section
 
 .slide-one{
 	background-color: #BDBE36;
+	background-image: url("images/img4.jpg");
+	background-size: cover;
 }
 
 .slide-two{
 	background-color: #046FDB;
+	background-image: url("images/img6.jpg");
+	background-size: cover;
 }
 
 .slide-three{
 	background-color: #2A363B;
+	background-image: url("images/img2.jpg");
+	background-size: cover;
 }
 
 .slide-four{
+	background-image: url("images/img7.jpg");
+	background-size: cover;
 	background-color: #BB5A5A;
 }
 
@@ -445,6 +453,7 @@ preloader section
 	right: 5px;
 	font-size: 1em;
 	transition: all .2s;
+	color: black;
 }
 
 .port-title.desappear{
@@ -511,6 +520,110 @@ preloader section
 	opacity: 1;
 }
 
+/***************************************
+* 			  PROJECT RESP			   *
+***************************************/
+.the-slide,.proj-resp-slide-test{
+	display: none;
+}
+
+.proj-section-1:hover{
+	cursor: pointer;
+}
+
+.resp-port-container{
+	height: 100vh;
+	background-size: cover;
+    background-position: top center;
+}
+
+.proj-section-1{
+	height: 70vh;
+}
+
+.proj-section-2{
+	height: 30vh;
+}
+
+.proj-resp-title{
+	position: relative;
+	top: 30%;
+	color: white;
+	font-size: 2.2em;
+	text-align: center;
+	text-decoration: underline !important;
+	font-weight: 900;
+	width: 100%;
+	border-bottom: 1px solid grey;
+}
+
+.proj-resp-data{
+	width: 100%;
+	position: relative;
+	bottom:0;
+	border-top: 1px solid grey;
+	padding-top: 20px;
+}
+
+.proj-resp-subtitle{
+	width: 100%;
+	margin: 0;
+	color: rgba(0,0,0,.5);
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.6em;
+}
+
+.proj-resp-title-2{
+	width: 100%;
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.4em;
+}
+
+.proj-resp-slide{
+	width: 100%;
+	position: relative;
+}
+
+.proj-resp-slide-test{
+	width: 100%;
+	position: absolute;
+	bottom: 40px;
+	text-align: center;
+	z-index: 10; 
+}
+
+.slide-number{
+	font-size: 2.2em;
+	color: white;
+}
+
+.slick-prev, .slick-next{
+	color:black;
+	position: absolute;
+	bottom:40px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid white;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 3em;
+}
+
+.slick-prev{
+	left: 20px;
+}
+
+.slick-next{
+	right: 20px;
+}
 
 /***************************************
 *			COLORS PORT 			   *
@@ -601,6 +714,10 @@ preloader section
 	overflow: hidden;
 }
 
+.single-titles * {
+	text-align: left;
+}
+
 .work-common-title{
 	font-weight: 800;
 }
@@ -618,6 +735,11 @@ preloader section
 	opacity: 1;
 	transition: all 1s;  
 	margin-left:30px;
+}
+
+.work-info-1,.work-info-2,.work-info-3,.work-info-4{
+	width: 25vw;
+	border:1px solid rgba(178,178,178,.7);
 }
 
 .work-info-1,.work-info-2,.work-info-3{
@@ -874,7 +996,6 @@ preloader section
 
 @media(max-width: 980px){
 	.slide-title{
-		margin-left: 10px;
 		max-width: 80vw;
 	}
 	.slide-item{
@@ -882,11 +1003,17 @@ preloader section
 	}
 }
 
+@media(max-width: 495px){
+
+}
+
 @media (max-width: 640px){
 	/***********************************
 	*				INICIO			   *
 	************************************/
-
+	.slide-title{
+		margin-left: 10px;
+	}
 	.slide-one,.slide-two,.slide-three,.slide-left,.slide-right{
 		display: none;
 	}
@@ -895,11 +1022,55 @@ preloader section
 		display: block;
 	}
 
+	.index-grid{
+		display: none;
+	}
+
 	/***********************************
 	*			 FIN INICIO			   *
 	************************************/
 	
+	/***********************************
+	*			  PROYECTOS			   *
+	************************************/
 
+	.project-container{
+		display: none;
+	}
+
+	.the-slide,.proj-resp-slide-test{
+		display: block;
+	}
+
+	/************WORK SINGLE************/
+	.work-single{
+		position: relative;
+		z-index: 100;
+	}
+
+	.work-info-1,.work-info-2,.work-info-3,.work-info-4{
+		width: 100%;
+		bottom:0;
+		height: 15vh;
+	}
+
+	.work-info-4 div{
+		margin: 0
+	}
+
+	.work-title{
+		display: none;
+	}
+
+	.work-row-2{
+		overflow: inherit;
+		height: auto;
+	}
+
+
+	/***********************************
+	*		   FIN PROYECTOS		   *
+	************************************/
 
 	/***********************************
 	*				MENU			   *
