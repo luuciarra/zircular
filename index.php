@@ -26,6 +26,11 @@
 		       <div class="sk-circle12 sk-circle"></div>
 		    </div>
 		</div>
+
+		<div class="logo-section">
+			<h1>LOGO</h1>
+		</div>
+		
 		<div class="container-fluid" style="padding: 0">
 			<?php include("menuInclude.php") ?>
 		</div>
@@ -36,35 +41,23 @@
 				<div class="row">
 					<div class="col">
 						<div class="row align-items-end">
-							<h3 class="slide-subtitle slide-text-animation text-1" >Experiencia</h3>
+							<h3 class="slide-subtitle slide-text-animation text-1">Experiencia</h3>
 						</div>
 					</div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item slide-text-animation text-1">Experiencia</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
 					<div class="col"></div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item slide-text-animation text-1">Sostenibilidad</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
 					<div class="col"></div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item  slide-text-animation text-1">Vanguardia</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
@@ -84,31 +77,19 @@
 						</div>
 					</div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item slide-text-animation text-2">Experiencia</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
 					<div class="col"></div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item slide-text-animation text-2">Sostenibilidad</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
 					<div class="col"></div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item  slide-text-animation text-2">Vanguardia</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
@@ -128,31 +109,19 @@
 						</div>
 					</div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item slide-text-animation text-3">Experiencia</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
 					<div class="col"></div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item slide-text-animation text-3">Sostenibilidad</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
 					<div class="col"></div>
 					<div class="col"></div>
-					<div class="col">
-						<div class="row align-items-center">
-							<h6 class="slide-item  slide-text-animation text-3">Vanguardia</h6>
-						</div>
-					</div>
+					<div class="col"></div>
 					<div class="col"></div>
 				</div>
 				<div class="row">
@@ -201,19 +170,31 @@
 			<div class="row">
 				<div class="col port-container-index"></div>
 				<div class="col port-container-index"></div>
-				<div class="col port-container-index item-1 active-item"></div>
+				<div class="col port-container-index item-1 active-item">
+					<div class="row align-items-center">
+						<h6 class="slide-item">Experiencia</h6>
+					</div>
+				</div>
 				<div class="col port-container-index"></div>
 			</div>
 			<div class="row">
 				<div class="col port-container-index"></div>
 				<div class="col port-container-index"></div>
-				<div class="col port-container-index item-2"></div>
+				<div class="col port-container-index item-2">
+					<div class="row align-items-center">
+						<h6 class="slide-item">Sostenibilidad</h6>
+					</div>
+				</div>
 				<div class="col port-container-index"></div>
 			</div>
 			<div class="row">
 				<div class="col port-container-index"></div>
 				<div class="col port-container-index"></div>
-				<div class="col port-container-index item-3"></div>
+				<div class="col port-container-index item-3">
+					<div class="row align-items-center">
+						<h6 class="slide-item">Vanguardia</h6>
+					</div>
+				</div>
 				<div class="col port-container-index"></div>
 			</div>
 			<div class="row">

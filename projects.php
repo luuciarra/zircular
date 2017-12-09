@@ -53,14 +53,15 @@
 		    </div>
 		</div>
 
+		<div class="logo-section">
+			<h1>LOGO</h1>
+		</div>
+
 		<div class="container-fluid" style="padding: 0">
 			<?php include("menuInclude.php") ?>
 		</div>
 
-		<div class="proj-resp-slide-test">
-			<div class="slide-number">1/16</div>
-		</div>
-
+		<!-- DESKTOP LAYOUT -->
 		<div class="project-container container-fluid main-container">
 			<div class="row">
 				<div elem="1" class="item col port-container pointer port-color-reposicion-bg" >
@@ -152,6 +153,7 @@
 			</div>
 		</div>
 
+		<!-- RESPONSIVE LAYOUT -->
 		<div class="project-container-responsive the-slide">
 			<div elemresp="1" class="resp-port-container" >		
 				<div class="proj-section-1">
@@ -183,8 +185,8 @@
 				</div>
 				<div class="proj-section-2 port-color-reposicion-back">
 					<div class="proj-resp-data">
-						<p class="proj-resp-subtitle">Subtitulo</p>
-						<p class="proj-resp-title-2">Título</p>
+						<p class="proj-resp-subtitle">Subtitulo 3</p>
+						<p class="proj-resp-title-2">Título 3</p>
 					</div>
 				</div>
 			</div>
@@ -335,6 +337,10 @@
 			</div>
 		</div>
 
+		<div class="proj-resp-slide-test">
+			<div class="slide-number">1/16</div>
+		</div>
+
 
 		<div class="container-fluid work-single">
 			<div class="row align-items-end work-row-1" >
@@ -368,40 +374,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class="container-fluid work-single" >
-
-			<div class="row align-items-end work-row-1" >
-				<h1 class="work-title"></h1>
-			</div>
-
-			<div class="row work-row-2" >
-				<div class="col port-container work-info-1">
-					<div class="row flex-column justify-content-center align-items-center">
-						<h3 class="work-common-title">Cliente</h3>
-						<h6>Lorem</h6>
-					</div>
-				</div>
-				<div class="col port-container text-center work-info-2">
-					<div class="row flex-column justify-content-center align-items-center">
-						<h3 class="work-common-title">Ciudad</h3>
-						<h6>Lorem</h6>
-					</div>
-				</div>
-				<div class="col port-container text-center work-info-3">
-					<div class="row flex-column justify-content-center align-items-center">
-						<h3 class="work-common-title">250.000m2</h3>
-						<h6>Lorem</h6>
-					</div>
-				</div>
-				<div class="col port-container text-center work-info-4 ">
-					<div class="row flex-column align-items-start justify-content-center single-titles">
-						<h4></h4>
-						<h5></h5>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</body>
 
 	<script src="js/projects.js"></script>

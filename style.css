@@ -152,14 +152,21 @@ preloader section
   }
 
 @keyframes sk-circleBounceDelay {
-  0%, 80%, 100% {
-      transform: scale(0); 
-    }
+	0%, 80%, 100% {
+	  transform: scale(0); 
+	}
 
-  40% {
-      transform: scale(1); 
+	40% {
+	  transform: scale(1); 
     } 
-  }
+}
+
+.logo-section{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 200;
+}
 
 /************************************
 *				INICIO				*
@@ -218,15 +225,13 @@ preloader section
 
 .slide-left{
 	left:20px;
+	animation: arrowLeft 1s ease-in-out infinite;
 }
 
-.slide-left.animated{
-	animation: arrowLeft 1.5s ease-in-out;
-}
 
 .slide-left::after{
 	content: "";
-    width: 60px;
+    width: 40px;
     height: 2px;
     background-color: white;
     display: block;   
@@ -247,20 +252,26 @@ preloader section
 	0% {
 		transform:translateX(0%);
 	}
-	5% {
+	12.5%{
+		transform:translateX(-5%);
+	}
+	25% {
 		transform:translateX(-10%);
 	}
-	20% {
-		transform:translateX(0%);
+	37.5% {
+		transform:translateX(-15%);
 	}
-	40% {
+	50% {
 	    transform:translateX(-20%);
 	}
-	65% {
-		transform:translateX(0%);
+	62.5% {
+		transform:translateX(-15%);
 	}
-	85% {
-	    transform:translateX(-15%);
+	75% {
+	    transform:translateX(-10%);
+	}
+	87.5%{
+		transform:translateX(-5%);
 	}
 	100% {
 	    transform:translateX(0%);
@@ -270,15 +281,12 @@ preloader section
 
 .slide-right{
 	right: 20px;
-}
-
-.slide-right.animated{
-	animation: arrowRight 1.5s ease-in-out;
+	animation: arrowRight 1s ease-in-out infinite;
 }
 
 .slide-right::after{
 	content: "";
-    width: 60px;
+    width: 40px;
     height: 2px;
     background-color: white;
     display: block;   
@@ -299,20 +307,26 @@ preloader section
 	0% {
 		transform:translateX(0%);
 	}
-	5% {
+	12.5%{
+		transform:translateX(5%);
+	}
+	25% {
 		transform:translateX(10%);
 	}
-	20% {
-		transform:translateX(0%);
+	37.5% {
+		transform:translateX(15%);
 	}
-	40% {
+	50% {
 	    transform:translateX(20%);
 	}
-	65% {
-		transform:translateX(0%);
+	62.5% {
+		transform:translateX(15%);
 	}
-	85% {
-	    transform:translateX(15%);
+	75% {
+	    transform:translateX(10%);
+	}
+	87.5%{
+		transform:translateX(5%);
 	}
 	100% {
 	    transform:translateX(0%);
@@ -321,26 +335,18 @@ preloader section
 
 .slide-one{
 	background-color: #BDBE36;
-	background-image: url("images/img4.jpg");
-	background-size: cover;
 }
 
 .slide-two{
 	background-color: #046FDB;
-	background-image: url("images/img6.jpg");
-	background-size: cover;
 }
 
 .slide-three{
 	background-color: #2A363B;
-	background-image: url("images/img2.jpg");
-	background-size: cover;
 }
 
 .slide-four{
 	background-image: url("images/img7.jpg");
-	background-size: cover;
-	background-color: #BB5A5A;
 }
 
 .slide-text-animation{
@@ -367,20 +373,21 @@ preloader section
 	margin: 0;
 	color: rgba(255,255,255,.6);
 	font-weight: 900;
-	text-align: right;
 	width: 100%;
-    text-align: center;
+    margin-left: 95px;
 }
 
 .slide-item{
+	color: white;
 	font-size: 14px;
 	position: absolute;
-	width: 100%;
 	text-align: right;
 	padding-right: 5px;
 	bottom: 2px;
+	right: 0;
 	margin: 0 !important;
 	font-weight: bold;
+
 }
 
 .active-item{
@@ -389,7 +396,7 @@ preloader section
 }
 
 .port-container-index{
-	border:1px solid rgba(178,178,178,.7);
+	border: 1px solid rgba(178,178,178,.4);
 }
 
 .href-projects{
@@ -425,7 +432,7 @@ preloader section
 *		   PORTFOLIO INICIO 		*
 ************************************/
 .port-container{
-	border: 0.1px solid rgb(230,230,230);
+	border: 0.1px solid rgba(230,230,230,.4);
 	position: relative;
 }
 
@@ -450,7 +457,7 @@ preloader section
 .port-title{
 	position: absolute;
 	bottom: 5px; 
-	right: 5px;
+	right: 20px;
 	font-size: 1em;
 	transition: all .2s;
 	color: black;
@@ -520,111 +527,12 @@ preloader section
 	opacity: 1;
 }
 
-/***************************************
+/**************************************
 * 			  PROJECT RESP			   *
 ***************************************/
 .the-slide,.proj-resp-slide-test{
 	display: none;
 }
-
-.proj-section-1:hover{
-	cursor: pointer;
-}
-
-.resp-port-container{
-	height: 100vh;
-	background-size: cover;
-    background-position: top center;
-}
-
-.proj-section-1{
-	height: 70vh;
-}
-
-.proj-section-2{
-	height: 30vh;
-}
-
-.proj-resp-title{
-	position: relative;
-	top: 30%;
-	color: white;
-	font-size: 2.2em;
-	text-align: center;
-	text-decoration: underline !important;
-	font-weight: 900;
-	width: 100%;
-	border-bottom: 1px solid grey;
-}
-
-.proj-resp-data{
-	width: 100%;
-	position: relative;
-	bottom:0;
-	border-top: 1px solid grey;
-	padding-top: 20px;
-}
-
-.proj-resp-subtitle{
-	width: 100%;
-	margin: 0;
-	color: rgba(0,0,0,.5);
-	text-align: center;
-	font-weight: 900;
-	font-size: 1.6em;
-}
-
-.proj-resp-title-2{
-	width: 100%;
-	margin: 0;
-	color: white;
-	text-align: center;
-	font-weight: 900;
-	font-size: 1.4em;
-}
-
-.proj-resp-slide{
-	width: 100%;
-	position: relative;
-}
-
-.proj-resp-slide-test{
-	width: 100%;
-	position: absolute;
-	bottom: 40px;
-	text-align: center;
-	z-index: 10; 
-}
-
-.slide-number{
-	font-size: 2.2em;
-	color: white;
-}
-
-.slick-prev, .slick-next{
-	color:black;
-	position: absolute;
-	bottom:40px;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	border: 2px solid white;
-	z-index: 10;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	font-size: 3em;
-}
-
-.slick-prev{
-	left: 20px;
-}
-
-.slick-next{
-	right: 20px;
-}
-
 /***************************************
 *			COLORS PORT 			   *
 ***************************************/
@@ -797,11 +705,19 @@ preloader section
 *			MENU				   *
 ***********************************/
 .main-menu-responsive{
-	transition: all .3s;
 	position: absolute; 
 	opacity: 0;
+	display: none;
 	background-color: rgba(255,255,255,1);
 	z-index: 0; 
+}
+
+.menu-data-text{
+	margin: 20px;
+	font-size: 12px;
+	font-weight: 400;	
+    line-height: 12px;
+    color: #999;
 }
 
 .menu-resp-list{
@@ -824,6 +740,7 @@ preloader section
 }
 
 .main-menu {
+	display: none;
 	transition: all .3s;
 	position: absolute; 
 	opacity: 0;
@@ -831,11 +748,89 @@ preloader section
 	z-index: 0; 
 }
 
+/********************HAM MENU********************/
 .logo-menu-container{
 	position: absolute; 
 	top: 20px; 
-	left: 20px; 
+	right: 20px; 
 	z-index: 200;
+	width: 38px;
+	height: 35px;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.logo-menu-container span{
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.logo-menu-container span:nth-child(1) {
+  top: 0px;
+}
+
+.logo-menu-container span:nth-child(2) {
+  top: 10px;
+}
+
+.logo-menu-container span:nth-child(3) {
+  top: 20px;
+}
+
+.logo-menu-container.open span:nth-child(1) {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+.logo-menu-container.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.logo-menu-container.open span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+
+/********************FIN HAM MENU********************/
+
+.menu-lng{
+	position: absolute;
+	z-index: 200;
+	top: 25px;
+    right: 90px;
+    transition: all .3s;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.menu-lng p{
+	 color: rgb(178, 180, 178);
+}
+
+.menu-lng p::before{
+	content:"";
+	width: 63px;
+	background-color: rgb(178, 180, 178);
+	height: 1px;
+	display: inline-block;
+	margin: 4px;
+	line-height: 11px;
+}
+
+.menu-lng-idioma{
+	font-weight: 900;
+	color: black;
+	text-decoration: underline !important;
 }
 
 .logo-menu-container-button {
@@ -852,10 +847,6 @@ preloader section
 	height: 25vh;
 }
 
-/*.menu-port-tras{
-	background-color: rgba(255,255,255,.9);
-}
-*/
 .back-white{
 	background-color: white;
 }
@@ -919,6 +910,11 @@ preloader section
 .port-ref-title{
 	font-weight: 900;
 	margin: 6px;
+	position: relative;
+	font-size: 15px;
+    line-height: 1.5vw;
+	left: 9%;
+    bottom: 10%;
 }
 
 .menu-text-transition{
@@ -927,72 +923,6 @@ preloader section
 	transition-delay: .6s
 }
 
-/*****CLOSE BUTTON*****/
-.menu-close{
-	position: absolute;
-	z-index: 100;
-	top:20px;
-	right: 20px;	
-}
-
-.close-button {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    line-height: 50px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 1px solid #b2b4b2
-}
-
-.uno, .dos{
-	transform: rotate(-45deg);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -.5px;
-    margin-left: -13px;
-    display: block;
-    height: 1px;
-    width: 26px;
-    background-color: #b2b4b2;
-}
-
-.uno{
-    transform: rotate(-45deg);
-}
-
-.uno.animated{
-	animation: animatedUno .7s ease-in-out;
-}
-
-.dos{
-	transform: rotate(-135deg);
-}
-
-.dos.animated{
-	animation: animatedDos .7s ease-in-out;
-}
-
-.close-button:hover{
-	cursor: pointer;
-}
-
-
-@keyframes animatedDos{
-	0%{transform: rotate(-45deg); left: 50%; top:50%;}
-	50%{transform: rotate(90deg); left: 65%; top:50%}
-	100%{transform: rotate(-45deg);left: 50%; top:50%;}
-}
-
-@keyframes animatedUno{
-	0%{transform: rotate(-135deg); left: 50%; top: 50%}
-	50%{transform: rotate(-270deg); left: 35%; top: 50%}
-	100%{transform: rotate(-135deg);left: 50%; top: 50%}
-}
-
-
-/************FIN CLOSE BUTTON***********/
 
 @media(max-width: 980px){
 	.slide-title{
@@ -1034,7 +964,7 @@ preloader section
 	*			  PROYECTOS			   *
 	************************************/
 
-	.project-container{
+	/*.project-container{
 		display: none;
 	}
 
@@ -1043,7 +973,7 @@ preloader section
 	}
 
 	/************WORK SINGLE************/
-	.work-single{
+	/*.work-single{
 		position: relative;
 		z-index: 100;
 	}
@@ -1065,7 +995,7 @@ preloader section
 	.work-row-2{
 		overflow: inherit;
 		height: auto;
-	}
+	}*/
 
 
 	/***********************************
@@ -1075,6 +1005,10 @@ preloader section
 	/***********************************
 	*				MENU			   *
 	************************************/
+
+	.menu-lng p::before{
+		display: none;
+	}
 
 	.menu-port-tras, .back-white{
 		display: none;

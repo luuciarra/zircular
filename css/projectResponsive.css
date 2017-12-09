@@ -1,0 +1,175 @@
+
+/***************************************
+* 			  PROJECT RESP			   *
+***************************************/
+.the-slide{
+	display: block;
+}
+
+.proj-resp-slide-test{
+	display: block;
+}
+
+.proj-section-1:hover{
+	cursor: pointer;
+}
+
+.resp-port-container{
+	height: 100vh;
+	background-size: cover;
+    background-position: top center;
+}
+
+.proj-section-1{
+	height: 70vh;
+}
+
+.proj-section-2{
+	height: 30vh;
+}
+
+.proj-resp-title{
+	position: relative;
+	top: 30%;
+	color: white;
+	font-size: 2.2em;
+	text-align: center;
+	text-decoration: underline !important;
+	font-weight: 900;
+	width: 100%;
+	border-bottom: 1px solid grey;
+}
+
+.proj-resp-data{
+	width: 100%;
+	position: relative;
+	bottom:0;
+	border-top: 1px solid grey;
+	padding-top: 20px;
+}
+
+.proj-resp-subtitle{
+	width: 100%;
+	margin: 0;
+	color: rgba(0,0,0,.5);
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.6em;
+}
+
+.proj-resp-title-2{
+	width: 100%;
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.4em;
+}
+
+.proj-resp-slide{
+	width: 100%;
+	position: relative;
+}
+
+.proj-resp-slide-test{
+	width: 100%;
+	position: absolute;
+	bottom: 40px;
+	text-align: center;
+	z-index: 10; 
+
+}
+
+.slide-number{
+	font-size: 2.2em;
+	color: white;
+}
+
+.slick-prev, .slick-next{
+	position: absolute;
+	bottom:40px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid white;
+	z-index: 15;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	transition: all .3s;
+}
+
+.slick-prev{
+	transform: rotate(180deg);
+}
+
+.slick-next::before,.slick-next::after,.slick-prev::before,.slick-prev::after{
+    content:"";
+    position: absolute;
+    width:35%;
+    height: 8%;
+    top:41%;
+    left:55%;
+    background: white;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all .2s linear;
+}
+
+.slick-next::after,.slick-prev::after{
+	z-index: 3;
+    top:59%;
+    left:55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slick-prev:hover{
+	cursor: pointer;
+}
+
+.slick-prev{
+	left: 20px;
+}
+
+.slick-next{
+	right: 20px;
+}
+
+.project-container{
+	display: none;
+}
+
+
+
+/************WORK SINGLE************/
+.work-single{
+	position: static;
+	/*overflow: hidden;*/
+}
+
+.work-info-1,.work-info-2,.work-info-3,.work-info-4{
+	width: 100%;
+	position: static;
+	height: 15vh;
+}
+
+.work-info-4{
+	height: auto;
+	padding:20px;
+}
+
+.work-info-4 div{
+	margin: 0
+}
+
+.work-title,.work-row-1{
+	display: none;
+}
+
+.work-row-2{
+	height: auto;
+}
+
